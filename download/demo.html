@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Demo Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="demoStyling.css" rel="stylesheet" type="text/css" />  
+
+    </head>
+
+
+
+    <body>
+        <script src="MakeSliderFW.js" type="text/javascript"></script>
+        <script src="MakeSliderFW.js" type="text/javascript"></script>
+
+
+        <div>Welcome</div>
+
+        <h1>Rate These So We Can Learn More About You</h1>
+        <p>Drag the slider to show how much you like this food.</p>
+        <div id ="component1"></div> <br/><br/><br/><br/>
+        <div id ="component2"></div>
+
+
+        <script type="text/javascript">
+
+            var foodarray = [
+                {
+                    caption: "Tiramisu",
+                    image: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/2/4/2/RX-FNM_030111-Sugar-Fix-005_s4x3.jpg.rend.hgtvcom.826.620.suffix/1371597326801.jpeg"
+                },
+                {
+                    caption: "Blueberry Muffin",
+                    image: "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Wild-Blueberry-Muffins_EXPS_FTTMZ19_787_B03_05_7b_rms.jpg"
+                }
+            ];
+            
+            var component1 = MakeSliderFW(foodarray);
+            document.getElementById("component1").appendChild(component1);
+            var component2 = MakeSliderFW(foodarray);
+            document.getElementById("component2").appendChild(component2);
+        </script>
+
+    </body>
+
+</html>

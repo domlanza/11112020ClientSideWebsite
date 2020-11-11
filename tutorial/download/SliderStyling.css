@@ -1,0 +1,89 @@
+.slidercomponent{
+}
+
+
+.slidercomponent .resize{
+    width: 400px;
+    height: auto;
+
+}
+.slidercomponent .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.slidercomponent .slidecontainer {
+    width: 100%;
+}
+
+.slidercomponent .slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slidercomponent .slider:hover {
+    opacity: 1;
+}
+
+.slidercomponent .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slidercomponent .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+.slidercomponent .container {
+    position: relative;
+    width: 50%;
+}
+
+.slidercomponent .image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slidercomponent .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+
+.slidercomponent .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.slidercomponent .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
